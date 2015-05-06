@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<project name="JarBuilder" default="BuildIntoJar">
+	<target name="BuildIntoJar" description="">
+		<jar destfile="G:/spigot 1.8.3/plugins/OasisWorldGen.jar" >
+		    <fileset dir="./bin" includes="**/*.class" />
+		    <fileset dir="./src" includes="**/*.java" />
+			<fileset dir="." includes="*.yml" />
+		</jar>
+	</target>
+</project>
